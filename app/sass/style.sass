@@ -498,12 +498,19 @@ a:hover
 
 //start updated style
 .photo-profile__img
-  width: 80px 
-  height: 80px 
-  min-width: 80px
+  width: 60px 
+  height: 60px 
+  min-width: 60px
   border-radius: 50%
   object-fit: cover 
   object-position: center
+.photo-profile--big
+  .photo-profile__img
+    width: 100px 
+    height: 100px
+  .photo-profile
+    margin-right: 15px
+
 .photo-profile
   margin-right: 10px
 .user-info
@@ -530,15 +537,15 @@ a:hover
   position: relative
 .photo-profile:after
   content: ""
-  width: 19px
-  height: 19px
+  width: 14px
+  height: 14px
   background: #16c60c
-  border: 3px solid #edeff6
+  border: 2px solid #edeff6
   border-radius: 50%
   bottom: 0
   right: 0
   position: absolute
-  transform: translateX(-5px) translateY(-2px)
+  transform: translateX(-2px) translateY(-2px)
 .user-info__sub-title
   color: #a3a3a3
   font-weight: 400
@@ -575,6 +582,70 @@ a:hover
   color: #000
 .user-info:hover 
   color: #000
+.user-info__content--no-border
+  border-bottom: none
+.title 
+  font-size: 32px 
+  margin-bottom: 10px
+  font-weight: 700
+.message-title
+  text-align: center
+  font-size: 18px 
+  font-weight: 600
+  margin-top: 30px
+  margin-bottom: 15px
+textarea 
+  width: 100% 
+  border-radius: 10px 
+  background: #F5F5F5
+  display: block
+  padding: 15px 15px
+  font-size: 18px
+.submit-button
+  margin-top: 20px 
+  background: #2598e7
+  color: #fff 
+  display: flex 
+  justify-content: center 
+  align-items: center 
+  border-radius: 50px
+  height: 50px
+  font-size: 20px 
+  font-weight: 600
+.photo-profile--big:after
+  width: 20px 
+  height: 20px
+  border-width: 3px
+.first-message-page
+  padding-top: 20px
+  .back-btn
+    margin-bottom: 40px
+    display: block
+    img 
+      width: 20px
+.modal-window 
+  position: fixed 
+  top: 0 
+  left: 0 
+  width: 100vw 
+  height: 100vh
+  background: rgba(#000, .8)
+  z-index: 999
+  display: none
+.modal-content
+  position: absolute 
+  top: 50% 
+  left: 50% 
+  transform: translateX(-50%) translateY(-50%)
+  width: 90%
+  padding: 40px 20px
+  text-align: center
+.modal-title
+  font-size: 28px 
+  font-weight: 700
+  margin-bottom: 10px
+.modal-sub-title
+  font-size: 16px
 @import "media"
 
 
