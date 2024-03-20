@@ -489,6 +489,7 @@ a:hover
   border-radius: 70px
   font-size: 18px
 
+
 @media only screen and (max-width: 370px)
   h2
     font-size: 19px
@@ -530,6 +531,14 @@ a:hover
   padding: 10px
 .user-info__sub-title
   font-weight: 600
+  display: flex 
+  flex-direction: column 
+  justify-content: center
+.user-info__text
+  max-height: 45px 
+  overflow: hidden
+  line-height: 1.5
+
 .photo-profile
   //padding: 2px 
   //border: 3px solid #40677c 
@@ -558,6 +567,7 @@ a:hover
     font-size: 16px
   .user-info__sub-title 
     font-size: 3.7vw
+  
   .photo-profile:after 
     width: 17px
     height: 17px
@@ -570,6 +580,8 @@ a:hover
     font-size: 3.2vw
   .photo-profile
     margin-right: 10px
+  .user-info__text
+    max-height: 10vw
 .user-info__content
   border-bottom: 1px solid #E8E7E7
   min-height: 75px
@@ -671,11 +683,12 @@ textarea
   display: flex 
   align-self: center
 .user-info__sub-title
-  display: flex
-  align-items: center
+
   img
     width: 10px
     margin-right: 3px
+    display: block
+
 
 //start spinner style
 .spinner-wrapper
@@ -759,6 +772,7 @@ textarea
 .no-matches__image
   margin-bottom: 10px
   width: 60px
+
 
 @import "media"
 
