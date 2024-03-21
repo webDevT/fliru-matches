@@ -1,11 +1,7 @@
 @import "vars"
 @import "fonts"
 
-.premium__list
-  padding-left: 10px
 
-  li
-    list-style: none
 
 html
   font-family: sans-serif
@@ -27,9 +23,9 @@ body
   font-size: 1rem
   font-weight: 400
   line-height: 1.5
-  color: #212529
+  color: var(--tg-theme-text-color)
   text-align: left
-  background-color: #fff
+  background-color: var(--tg-theme-bg-color)
   box-sizing: border-box
 body
   * 
@@ -261,15 +257,6 @@ a:hover
   font-size: 15px
   margin-bottom: 20px
 
-.button a
-  width: 100%
-  background: #49c778
-  color: #fff
-  border-radius: 10px
-  text-align: center
-  display: block
-  padding: 20px 10px
-  font-size: 14px
 
 .underline
   text-decoration: underline
@@ -291,7 +278,7 @@ a:hover
 
   a
     font-size: 33px
-    color: #fff
+    color: var(--tg-theme-button-text-color)
     text-decoration: none
 
   img
@@ -314,118 +301,6 @@ a:hover
   .content__header-text
     padding-left: 12px
     line-height: 1
-
-.item__content
-  background: #f4f5f9
-  padding: 15px 12px 13px 12px
-  border-radius: 10px
-  position: relative
-
-.item__content-footer
-  display: -webkit-box
-  display: -ms-flexbox
-  display: flex
-  -webkit-box-pack: justify
-  -ms-flex-pack: justify
-  justify-content: space-between
-
-.item__price
-  font-size: 14px
-  font-weight: 700
-  margin-bottom: 5px
-
-.old-price
-  position: relative
-
-  &:before
-    content: ""
-    background: #740117
-    height: 2px
-    width: 28px
-    position: absolute
-    -webkit-transform: rotate(-23deg)
-    -ms-transform: rotate(-23deg)
-    transform: rotate(-23deg)
-    top: 10px
-
-.action
-  position: absolute
-  top: 0
-  right: 25px
-  -webkit-transform: translate(0, -50%)
-  -ms-transform: translate(0, -50%)
-  transform: translate(0, -50%)
-  background: #fff
-  border: 1.5px solid #49c778
-  border-radius: 10px
-  padding: 3px 15px
-  color: #49c778
-
-  &.best-price
-    background: #740117
-    color: #fff
-    border: none
-
-.item__footer
-  color: #adb0b6
-  padding-top: 9px
-
-.item
-  margin-bottom: 15px
-
-.item--green .item__content
-  background: #49c778
-  color: #fff
-
-.premium-wrapper
-  padding-top: 30px
-
-.list-title
-  margin-bottom: 15px
-  font-weight: 700
-  margin-top: 40px
-
-.premium__list li
-  margin: 8px 0
-
-.card-block
-  padding: 20px 10px
-
-.paytPal-wrapper
-  text-align: center
-  color: #d1d4da
-  margin-bottom: 15px
-
-  a
-    color: #000
-    font-family: "Lato", sans-serif
-    font-size: 19px
-    width: 100%
-    padding: 10px 75px
-    display: inline-block
-
-  img
-    width: 16px
-    position: relative
-    top: -1px
-    display: inline-block
-    margin-right: 4px
-
-.pay-button
-  display: inline-block
-  line-height: 1
-  -webkit-box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.3)
-  box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.3)
-  border-radius: 10px
-  border: 1px solid #f6f6f6
-
-.text
-  padding: 15px 0
-  color: #d1d4da
-  border-bottom: 1px solid #d1d4da
-
-  a
-    opacity: 0.5
 
 .text__title
   font-weight: 700
@@ -454,15 +329,6 @@ a:hover
 
 .premium-wrapper
   font-size: 14px
-
-.next-button-wrapper
-  width: 100%
-  background: #fff
-  position: fixed
-  bottom: 0
-  padding: 2px 15px
-  left: 0
-  padding-bottom: 10px
 
 .content
  // margin-bottom: 80px
@@ -516,7 +382,6 @@ a:hover
   margin-left: 3px
 //end updated style
 .user-info
-  background: #edeff6
   border-radius: 10px
   padding: 10px
 .user-info__sub-title
@@ -547,7 +412,7 @@ a:hover
   transform: translateX(-2px) translateY(-2px)
   box-sizing: border-box
 .user-info__sub-title
-  color: #818181
+  color: var(--tg-theme-hint-color)
   font-weight: 400
 @media only screen and (max-width: 369px)
   .photo-profile__img
@@ -582,9 +447,9 @@ a:hover
   min-width: calc(100% - 90px)
 .user-info
   min-height: 75px
-  color: #000
+  color: var(--tg-theme-text-color)
 .user-info:hover 
-  color: #000
+  color: var(--tg-theme-text-color)
 .user-info__content--no-border
   border-bottom: none
 .title 
@@ -606,8 +471,8 @@ textarea
   font-size: 18px
 .button
   margin-top: 20px 
-  background: #2598e7
-  color: #fff 
+  background: var(--tg-theme-button-color)
+  color: var(--tg-theme-button-text-color)
   display: flex 
   justify-content: center 
   align-items: center 
@@ -658,7 +523,7 @@ textarea
   margin-right: auto
   margin-bottom: 15px
 .submit-button 
-  background: #2598e7
+  background: var(--tg-theme-button-color)
 .submit-button[disabled]
   opacity: 0.5
   cursor: not-allowed
@@ -910,7 +775,7 @@ swiper-slide
 .question
     font-size: 18px 
     font-weight: 700
-    color: #017DF8
+    color: #017df8
     margin-bottom: 4px
 //end profile content style
 
@@ -990,8 +855,8 @@ swiper-slide
 //     font-weight: 700 
 //     font-size: 18px
 .button--blue 
-    background: #017DF8
-    color: #fff
+    background: var(--tg-theme-button-color)
+    color: var(--tg-theme-button-text-color)
 .questions-list--answer
     margin-top: 24px
 .radio-label 
@@ -1514,6 +1379,8 @@ swiper-slide
   img 
     width: 20px
 //end back-button style
+.matches-wrapper
+  padding-top: 20px
 @import "media"
 
 
