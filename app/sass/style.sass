@@ -98,6 +98,7 @@ a:hover
 
 .premium-wrapper
   font-size: 14px
+  padding-top: 80px
 
 .content
  // margin-bottom: 80px
@@ -182,6 +183,8 @@ a:hover
   position: absolute
   transform: translateX(-2px) translateY(-2px)
   box-sizing: border-box
+.photo-profile.offline:after
+  background: #A5A6A7
 .user-info__sub-title
   color: var(--tg-theme-hint-color)
   font-weight: 400
@@ -210,7 +213,7 @@ a:hover
   .user-info__text
     max-height: 10vw
 .user-info__content
-  border-bottom: 1px solid #E8E7E7
+  border-bottom: 1px solid rgba(#000, .2)
   min-height: 75px
   display: flex 
   flex-direction: column
@@ -238,10 +241,13 @@ a:hover
 textarea 
   width: 100% 
   border-radius: 10px 
-  background: #F5F5F5
+  background: transparent
   display: block
   padding: 15px 15px
   font-size: 18px
+  border: 1px solid var(--tg-theme-hint-color)
+  outline: none
+  color: var(--tg-theme-hint-color)
 .button
   margin-top: 20px 
   background: var(--tg-theme-button-color)
@@ -289,7 +295,6 @@ textarea
   font-size: 28px 
   font-weight: 700
   margin-bottom: 10px
-  color: var(--tg-theme-text-color)
 .modal-sub-title
   font-size: 16px
   color: var(--tg-theme-hint-color)
@@ -298,6 +303,7 @@ textarea
   margin-left: auto 
   margin-right: auto
   margin-bottom: 15px
+  fill: var(--tg-theme-button-color)
 .submit-button 
   background: var(--tg-theme-button-color)
 .submit-button[disabled]
@@ -414,7 +420,7 @@ textarea
     margin-right: auto
     position: relative
     //min-height: 100vh
-    padding-bottom: 150px
+    padding-bottom: 10px
 .container 
     padding-left: 15px 
     padding-right: 15px
@@ -670,7 +676,7 @@ label
     z-index: 999
     display: none
 .modal-content
-    background: #fff
+    background: var(--tg-theme-bg-color)
     position: absolute 
     top: 50vh 
     left: 50%
@@ -686,7 +692,6 @@ label
 .modal-title 
     font-size: 28px 
     font-weight: 700
-    margin-bottom: 48px
 .button--red 
     background: #EC305D
     color: #fff
@@ -1168,22 +1173,22 @@ swiper-slide
 .user-info__content-top
   justify-content: space-between
 .view-profile
-  border: 1px solid var(--tg-theme-button-color)
-  color: var(--tg-theme-button-color)
+  border: 1px solid var(--tg-theme-hint-color)
+  color: var(--tg-theme-hint-color)
   font-size: 12px
   display: flex
   align-items: center 
   justify-content: center
   padding: 0px 5px 
   border-radius: 30px
-  background: #fff
   line-height: 1.2
-  img 
+  svg
     width: 11px 
     margin-left: 5px
+    fill: var(--tg-theme-hint-color)
 .user-info__content-top
-  padding-bottom: 5px
-  padding-top: 5px
+  padding-bottom: 0px
+  padding-top: 0px
   color: var(--tg-theme-text-color)
 .user-info__content
   width: 100%
@@ -1193,6 +1198,11 @@ swiper-slide
   border: none
   margin: 0 
   padding: 0
+  position: fixed
+  top: 0
+  left: 0 
+  z-index: 999 
+  overflow-y: auto
 .button 
   text-decoration: none 
 @import "media"
